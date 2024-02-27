@@ -1,9 +1,27 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
+let wordBackwards = word.split("").reverse("").join("")
+let result;
+  if (word ===wordBackwards){
+    result = true;
+  }
+    else {
+      result = false;
+
+    }
+    return result;
+  }
+
+
+console.log(isPalindrome("abba"))
 
 /* 
   Add your pseudocode here
+  
+  take word and turn into array
+  reverse away
+  if else to ===
+  if true return "true"
+  if false return "false"
 */
 
 /*
